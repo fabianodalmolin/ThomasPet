@@ -1,2 +1,2 @@
-# ThomasPet
-Landing Page PET Shop &amp; Clínica veterinária
+# LandingPage-ThomasPet
+Created with CodeSandbox
