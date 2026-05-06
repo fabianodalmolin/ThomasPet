@@ -16,7 +16,10 @@
 
 <body>
   <div id="inicio"></div>
-  <a href="#inicio" class="inicio">INÍCIO</a><br>
+  <a href="#inicio" class="inicio">
+    <span>INÍCIO</span>
+    🐾
+  </a>
 
 
 
@@ -108,7 +111,7 @@
           <img src="./honda.png" alt="imagem de um cachorro beagle" />
           <img src="./Thomas_amarelo.png" alt="imagem de um gato amarelo" />
         </div>
-        </div>
+      </div>
     </section>
     <section class="servicos container" id="servicos">
       <h2 class="titulo_secao">Nossos <span class="amarelo">Serviços</span></h2>
@@ -184,7 +187,7 @@
               <rect x="2" y="4" width="20" height="16" rx="2" />
             </svg>
             <!-- thomaspet@exemplo.com.br -->
-             fabianodalmolin@gmail.com
+            fabianodalmolin@gmail.com
           </p>
         </div>
         <form action="https://formsubmit.co/fabianodalmolin@gmail.com" method="POST">
@@ -203,8 +206,12 @@
           </div>
 
           <!-- <button type="submit">Enviar mensagem</button> -->
-           <button type="submit" onclick="alert('Enviando...')">Enviar mensagem</button>
+          <button type="submit">Enviar mensagem</button>
+          <div id="mensagem-sucesso" style="display: none; color: #28a745; margin-top: 15px; font-weight: bold;">
+            Miau enviada com sucesso! 🐾
+          </div>
         </form>
+        </div>
     </section>
 
     <footer class="rodape">

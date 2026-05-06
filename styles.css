@@ -9,9 +9,9 @@
     position: fixed;
   bottom: 20px;
   
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
     background-color: #f4c542;
     color: #1f5e4a;
     border-radius: 50%;
@@ -26,9 +26,9 @@
     transition: all 0.3s ease;
 }
 
-.botao_topo:hover {
+.inicio:hover {
   background-color: #dd7045; /* Inverte: fundo fica verde */
-  color: #1f5e4a;            /* E a seta fica amarela */
+  /* color: #1f5e4a;            E a seta fica amarela */
   transform: translateY(-5px); /* Dá um leve pulinho */
 }
 
@@ -326,6 +326,72 @@ h2 {
   border-radius: 8px; /* Cantos arredondados */
   cursor: pointer; /* Mãozinha ao passar o mouse */
 }
+
+#mensagem-sucesso {
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+}
+
+button:disabled {
+  background-color: #ccc; /* Cor cinza enquanto envia */
+  cursor: not-allowed;
+}
+
+/* .inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  line-height: 0.99; /* Diminui o espaço interno da linha do texto */
+}
+
+.inicio::after {
+  content: "🐾";
+  font-size: 28px;   /* Tamanho da pegada */
+  margin-top: 0px;  /* Puxa a pegada para cima */
+  display: block;
+} 
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 35px; /* Tamanho da pegada por padrão */
+  transition: all 0.3s ease; /* Deixa a transição suave */
+  position: fixed; /* Opcional: para ele ficar fixo no cantinho */
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Esconde o texto "INÍCIO" por padrão */
+.inicio span {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  opacity: 0;       /* Torna invisível */
+  visibility: hidden;
+  margin-bottom: -10px; /* Puxa para perto da pegada */
+  transition: opacity 0.3s ease;
+}
+
+/* Quando o mouse passa por cima do link */
+.inicio:hover span {
+  opacity: 1;       /* Torna visível */
+  visibility: visible;
+}
+
+/* Efeito opcional: a pegada pode diminuir um pouco quando o texto aparece */
+.inicio:hover {
+  font-size: 30px;
+}
+
+
 
 /* .formulario_container {
   display: flex;
