@@ -146,19 +146,26 @@ h2 {
 
 @media (max-width: 768px) {
   .hero .hero_conteudo {
+    display: flex;
+    flex-direction: column; /* Força os itens a ficarem um em cima do outro */
     align-items: center;
     text-align: center;
   }
-  .hero h1 {
-    font-size: 32px;
-  }
+
   .hero_imagem {
-    display: block;      /* Garante que ela apareça */
-    width: 200px;        /* Define o novo tamanho menor */
-    margin: 0 auto;      /* Centraliza a imagem horizontalmente */
-    height: auto;        /* Mantém a proporção */
+    display: block;
+    width: 150px;      /* Ajuste o tamanho conforme preferir */
+    height: auto;
+    margin-bottom: 20px; /* Cria espaço entre a imagem e o texto abaixo */
+    order: -1;           /* Opcional: Garante que a imagem fique ACIMA do texto */
+  }
+
+  .hero_imagem img {
+    width: 100%;       /* Faz a imagem ocupar todo o espaço do container de 150px */
+    height: auto;
   }
 }
+
 
 /* @media (max-width: 768px) {
   .hero .hero_conteudo {
