@@ -137,6 +137,7 @@ h2 {
   color: white;
   text-decoration: none;
 }
+
 .hero_imagem img {
   width: 400px;
   position: absolute;
@@ -145,26 +146,32 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  /* Força o container a empilhar os itens */
   .hero .hero_conteudo {
-    display: flex;
-    flex-direction: column; /* Força os itens a ficarem um em cima do outro */
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   .hero_imagem {
-    display: block;
-    width: 150px;      /* Ajuste o tamanho conforme preferir */
-    height: auto;
-    margin-bottom: 20px; /* Cria espaço entre a imagem e o texto abaixo */
-    order: -1;           /* Opcional: Garante que a imagem fique ACIMA do texto */
+    position: relative !important; /* "Solta" a imagem do absolute */
+    top: auto !important;          /* Reseta posição topo */
+    left: auto !important;         /* Reseta posição esquerda */
+    transform: none !important;    /* Remove qualquer centralização manual */
+    
+    display: block !important;
+    width: 150px !important;       /* Diminui o tamanho */
+    margin: 20px auto 0 !important; /* Centraliza e dá espaço em relação ao texto acima */
+    order: 10;                     /* Joga para o final da coluna */
   }
 
   .hero_imagem img {
-    width: 100%;       /* Faz a imagem ocupar todo o espaço do container de 150px */
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
   }
 }
+
 
 
 /* @media (max-width: 768px) {
