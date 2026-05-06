@@ -137,7 +137,6 @@ h2 {
   color: white;
   text-decoration: none;
 }
-
 .hero_imagem img {
   width: 400px;
   position: absolute;
@@ -154,9 +153,26 @@ h2 {
     font-size: 32px;
   }
   .hero_imagem {
-    display: none;
+    display: block;      /* Garante que ela apareça */
+    width: 200px;        /* Define o novo tamanho menor */
+    margin: 0 auto;      /* Centraliza a imagem horizontalmente */
+    height: auto;        /* Mantém a proporção */
   }
 }
+
+/* @media (max-width: 768px) {
+  .hero .hero_conteudo {
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero_imagem {
+    display: none;
+  
+  }
+} */
 
 .sobre {
   display: flex;
