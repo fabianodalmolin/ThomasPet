@@ -3,7 +3,7 @@ const inputsElementos = document.querySelectorAll("input");
 const textoAreaElemento = document.querySelector("textarea");
 
 formElemento.addEventListener("submit", function (event) {
-  event.preventDefault();
+  // event.preventDefault();
 
   let valores = [];
 
@@ -13,3 +13,4 @@ formElemento.addEventListener("submit", function (event) {
   valores.push(textoAreaElemento.value);
   console.log("dados do formulario: ", valores);
 });
+

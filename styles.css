@@ -253,6 +253,58 @@ h2 {
   gap: 40px;
   /* 2. Cria o espaço entre eles (o que você perguntou no início!) */
 }
+.servicos {
+  padding: 64px 24px;
+}
+
+.servicos_grid {
+  display: grid;
+  /* Cria colunas que se ajustam sozinhas (Grid) */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efeito visual de flutuar ao passar o mouse */
+}
+
+.card_imagem img {
+  width: 100%;
+  /* REQUISITO TÉCNICO: Mantém a imagem sempre na proporção 16:9 */
+  aspect-ratio: 16 / 9; 
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+.card_corpo {
+  padding: 24px;
+  text-align: center;
+}
+
+.card_icone {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.card_corpo h3 {
+  color: #1f5e4a;
+  margin-bottom: 8px;
+}
+
+.card_corpo p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
 
 /* aplicar a regra diretamente nos elementos do formulário  */
 #contato form input,
