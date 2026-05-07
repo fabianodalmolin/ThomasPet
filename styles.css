@@ -5,31 +5,33 @@
 }
 
 .inicio {
-  
-    position: fixed;
+
+  position: fixed;
   bottom: 20px;
-  
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #f4c542;
-    color: #1f5e4a;
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 500;
-        z-index: 9999;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #f4c542;
+  color: #1f5e4a;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 9999;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .inicio:hover {
-  background-color: #dd7045; /* Inverte: fundo fica verde */
+  background-color: #dd7045;
+  /* Inverte: fundo fica verde */
   /* color: #1f5e4a;            E a seta fica amarela */
-  transform: translateY(-5px); /* Dá um leve pulinho */
+  transform: translateY(-5px);
+  /* interage saltando */
 }
 
 body {
@@ -50,6 +52,7 @@ h2 {
   color: #1f5e4a;
   font-size: 40px;
 }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -75,6 +78,7 @@ h2 {
   justify-content: space-between;
   padding: 24px;
 }
+
 .cabecalho .menu {
   display: flex;
   gap: 16px;
@@ -84,6 +88,7 @@ h2 {
   text-decoration: none;
   color: #1f5e4a;
 }
+
 /* section hero */
 .hamburguer {
   display: none;
@@ -114,8 +119,8 @@ h2 {
 }
 
 .hero .hero_acoes .btn_agendar {
-  display: inline-block; /* Essencial para links que parecem botões */
-  text-decoration: none; /* Remove o sublinhado padrão */
+  display: inline-block;
+  text-decoration: none;
   padding: 16px 24px;
   background-color: #f4c542;
   color: #1f5e4a;
@@ -125,14 +130,39 @@ h2 {
   cursor: pointer;
 }
 
-/* .hero .hero_acoes button {
+.hero {
+  background: #1f5e4a;
+  margin: 10px;
+  border-radius: 30px;
+  color: white;
+  padding: 40px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero_conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero .hero_acoes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero .hero_acoes button {
   padding: 16px 24px;
   background-color: #f4c542;
   color: #1f5e4a;
   border: 0;
   border-radius: 10px;
   font-weight: 600;
-} */
+}
+
 .hero .hero_acoes a {
   color: white;
   text-decoration: none;
@@ -146,47 +176,20 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  /* Força o container a empilhar os itens */
-  .hero .hero_conteudo {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .hero_imagem {
-    position: relative !important; /* "Solta" a imagem do absolute */
-    top: auto !important;          /* Reseta posição topo */
-    left: auto !important;         /* Reseta posição esquerda */
-    transform: none !important;    /* Remove qualquer centralização manual */
-    
-    display: block !important;
-    width: 150px !important;       /* Diminui o tamanho */
-    margin: 20px auto 0 !important; /* Centraliza e dá espaço em relação ao texto acima */
-    order: 10;                     /* Joga para o final da coluna */
-  }
-
-  .hero_imagem img {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-
-
-
-/* @media (max-width: 768px) {
   .hero .hero_conteudo {
     align-items: center;
     text-align: center;
   }
+
   .hero h1 {
     font-size: 32px;
   }
+
   .hero_imagem {
     display: none;
-  
   }
-} */
+}
+
 
 .sobre {
   display: flex;
@@ -195,12 +198,14 @@ h2 {
   margin-top: 64px;
   margin-bottom: 64px;
 }
+
 .sobre_info {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
 }
+
 .sobre_info .sobre_conteudo {
   flex: 1;
 }
@@ -252,8 +257,10 @@ h2 {
 
 #contato .container {
   display: flex;
-  flex-wrap: wrap; /* Importante para não quebrar no celular */
-  gap: 40px; /* Cria o espaço entre a esquerda e a direita */
+  flex-wrap: wrap;
+  /* Importante para não quebrar no celular */
+  gap: 40px;
+  /* Cria o espaço entre a esquerda e a direita */
   align-items: center;
 }
 
@@ -274,15 +281,18 @@ h2 {
   flex: 1;
   min-width: 300px;
   display: flex;
-  flex-direction: column; /* Faz os campos ficarem um embaixo do outro */
+  flex-direction: column;
+  /* Faz os campos ficarem um embaixo do outro */
 }
 
 #contato .container {
-  flex-wrap: wrap; /* Isso diz: "se não couber lado a lado, pule para baixo" */
+  flex-wrap: wrap;
+  /* Isso diz: "se não couber lado a lado, pule para baixo" */
   /* Coloca os filhos (info e form) lado a lado */
   gap: 40px;
   /* 2. Cria o espaço entre eles (o que você perguntou no início!) */
 }
+
 .servicos {
   padding: 64px 24px;
 }
@@ -298,21 +308,24 @@ h2 {
 .card {
   background: white;
   border-radius: 20px;
-  overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+  /* Garante que a imagem não saia da borda arredondada */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Efeito visual de flutuar ao passar o mouse */
+  transform: translateY(-10px);
+  /* Efeito visual de flutuar ao passar o mouse */
 }
 
 .card_imagem img {
   width: 100%;
   /* REQUISITO TÉCNICO: Mantém a imagem sempre na proporção 16:9 */
-  aspect-ratio: 16 / 9; 
-  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* Faz a imagem preencher o espaço sem distorcer */
 }
 
 .card_corpo {
@@ -340,9 +353,12 @@ h2 {
 #contato form input,
 #contato form textarea {
   margin-top: 10px;
-  border-radius: 8px; /* Aqui acontece a mágica do arredondamento */
-  border: 1px solid #ccc; /* Uma bordinha fina para aparecer o arredondado */
-  padding: 10px; /* Um espacinho interno para o texto não encostar na borda */
+  border-radius: 8px;
+  /* Aqui acontece a mágica do arredondamento */
+  border: 1px solid #ccc;
+  /* Uma bordinha fina para aparecer o arredondado */
+  padding: 10px;
+  /* Um espacinho interno para o texto não encostar na borda */
   flex-direction: column;
 }
 
@@ -353,8 +369,10 @@ h2 {
   background-color: #f4c542;
   color: #1f5e4a;
   font-weight: bold;
-  border-radius: 8px; /* Cantos arredondados */
-  cursor: pointer; /* Mãozinha ao passar o mouse */
+  border-radius: 8px;
+  /* Cantos arredondados */
+  cursor: pointer;
+  /* Mãozinha ao passar o mouse */
 }
 
 #mensagem-sucesso {
@@ -366,90 +384,55 @@ h2 {
 }
 
 button:disabled {
-  background-color: #ccc; /* Cor cinza enquanto envia */
+  background-color: #ccc;
+  /* Cor cinza enquanto envia */
   cursor: not-allowed;
-}
-
-/* .inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  color: #333;
-  line-height: 0.99; /* Diminui o espaço interno da linha do texto */
 }
 
 .inicio::after {
   content: "🐾";
-  font-size: 28px;   /* Tamanho da pegada */
-  margin-top: 0px;  /* Puxa a pegada para cima */
+  font-size: 28px;
+  /* Tamanho da pegada */
+  margin-top: 0px;
+  /* Puxa a pegada para cima */
   display: block;
-} 
+}
+
 .inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  font-size: 35px; /* Tamanho da pegada por padrão */
-  transition: all 0.3s ease; /* Deixa a transição suave */
-  position: fixed; /* Opcional: para ele ficar fixo no cantinho */
+  font-size: 35px;
+  /* Tamanho da pegada por padrão */
+  transition: all 0.3s ease;
+  /* Deixa a transição suave */
+  position: fixed;
+  /* Opcional: para ele ficar fixo no cantinho */
   bottom: 20px;
   right: 20px;
 }
 
-/* Esconde o texto "INÍCIO" por padrão */
+/* Esconde o texto "INÍCIO" e aparece qdo o cursor passa */
 .inicio span {
   font-size: 12px;
   font-weight: bold;
   color: black;
-  opacity: 0;       /* Torna invisível */
+  opacity: 0;
+  /* início some */
   visibility: hidden;
-  margin-bottom: -10px; /* Puxa para perto da pegada */
+  margin-bottom: -10px;
+  /* Puxa para perto da pegada */
   transition: opacity 0.3s ease;
 }
 
 /* Quando o mouse passa por cima do link */
 .inicio:hover span {
-  opacity: 1;       /* Torna visível */
+  opacity: 1;
+  /* inicio aparece de novo */
   visibility: visible;
 }
 
-/* Efeito opcional: a pegada pode diminuir um pouco quando o texto aparece */
 .inicio:hover {
   font-size: 30px;
 }
-
-
-
-/* .formulario_container {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-
-.contato_formulario {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contato_formulario .input {
-  width: 100%;
-  padding: 8px 16px;
-  border: 0;
-  border-radius: 8px;
-  }
-
-.contato_formulario .button {
-  padding: 8px 16px;
-  width: 100%;
-  border: 0;
-  background-color: #f4c542;
-  color: #1f5e4a;
-  font-weight: bold;
-  border-radius: 8px;
-} */

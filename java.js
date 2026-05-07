@@ -13,7 +13,7 @@ const btnEnviar = formElemento.querySelector("button[type='submit']"); // Seleci
 formElemento.addEventListener("submit", function (event) {
   event.preventDefault(); 
 
-  // 1. Efeito de carregamento no início
+  // Efeito de carregamento no início
   const textoOriginal = btnEnviar.innerText;
   btnEnviar.innerText = "Enviando... 🐾";
   btnEnviar.disabled = true;
@@ -37,7 +37,7 @@ formElemento.addEventListener("submit", function (event) {
     }
   })
   .finally(() => {
-    // 2. Volta o botão ao normal quando termina (dando certo ou errado)
+    // Volta o botão ao normal quando termina (dando certo ou errado)
     btnEnviar.innerText = textoOriginal;
     btnEnviar.disabled = false;
     btnEnviar.style.opacity = "1";
