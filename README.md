@@ -33,7 +33,7 @@ Para o desenvolvimento deste projeto, utilizei as seguintes fontes e ferramentas
 **Google Fonts:** Para experimentação de outras fontes além das utilizadas Fredoka e Poppins.
 **Dribbble:** Utilizado como referência visual para o design dos cards e paleta de cores.
 **Regex101:** Para a validação das expressões regulares nos campos de formulário.
-**Inteligência Artificial (IA pesquisa Google):** Utilizada como suporte na revisão do código, sugestões de melhorias como por exemplo para melhorar a experiência de quem visita o site e auxílio na redação desta documentação.
+**Inteligência Artificial (IA pesquisa Google):** Utilizada como suporte na revisão do código, sugestões de melhorias como por exemplo para melhorar a experiência de quem visita o site.
 
 
 ## Como testar o site no seu computador
